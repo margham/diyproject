@@ -6,7 +6,6 @@ import java.sql.SQLException;
 import diyproject.exception.DBexception;
 
 public class DBconnection {
-
   private static String HOST = "localhost";
   private static String PASSWORD = "DiyProject!";
   private static int PORT = 3306;
@@ -19,7 +18,7 @@ public class DBconnection {
 
     try {
       Connection conn = DriverManager.getConnection(uri);
-      System.out.println("Connection to schema '" + SCHEMA + "' is successful :D");
+      System.out.println("Connection to schema '" + SCHEMA + "' is successful.");
       return conn;
     } catch (SQLException e) {
       System.out.println("Unable to get connection at " + uri);
